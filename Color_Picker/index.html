@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Color Picker</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="color-picker-container">
+      <h1>Color Picker</h1>
+      <input type="color" id="colorPicker" value="#ff5733" />
+
+      <div class="color-info">
+        <div class="color-box" id="colorBox"></div>
+        <div class="color-values">
+          <p>
+            <strong>Hexadecimal:</strong> <span id="hexValue">#ff5733</span>
+            <button onclick="copyToClipboard('hexValue')">Copy</button>
+          </p>
+          <p>
+            <strong>RGB:</strong> <span id="rgbValue">rgb(255, 87, 51)</span>
+            <button onclick="copyToClipboard('rgbValue')">Copy</button>
+          </p>
+          <p>
+            <strong>HSL:</strong> <span id="hslValue">hsl(9, 100%, 60%)</span>
+            <button onclick="copyToClipboard('hslValue')">Copy</button>
+          </p>
+          <p>
+            <strong>CSS Color Name:</strong> <span id="colorName">Red</span>
+            <button onclick="copyToClipboard('colorName')">Copy</button>
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

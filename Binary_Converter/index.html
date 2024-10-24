@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Binary Converter with Light Bulbs</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="converter-container">
+      <h1>Binary Converter with Light Bulbs</h1>
+
+      <!-- Bit Length Selection -->
+      <div class="bit-selector">
+        <label for="bitLength">Select Bit Length: </label>
+        <select id="bitLength" onchange="setBitLength()">
+          <option value="8" selected>8-bit</option>
+          <option value="16">16-bit</option>
+          <option value="32">32-bit</option>
+        </select>
+      </div>
+
+      <!-- Light Bulb Circuit -->
+      <div id="bulbContainer" class="bulb-container">
+        <!-- Lightbulbs will be dynamically created here -->
+      </div>
+
+      <!-- Binary and Decimal Display -->
+      <div class="display-panel">
+        <p>Binary: <span id="binaryDisplay">00000000</span></p>
+        <p>Decimal: <span id="decimalDisplay">0</span></p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
